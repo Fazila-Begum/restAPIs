@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "8a078faf-acc3-4b09-b029-cfb7cad00b31",
+		"name": "servertest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24021502"
+	},
+	"item": [
+		{
+			"name": "listUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/listUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"listUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "myName2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "myWord1",
+							"type": "text"
+						},
+						{
+							"key": "profession",
+							"value": "myBusiness",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
